@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bus Travel Widget</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Travel Widget</h1>
+        <div class="input-section">
+            <label for="points">Points:</label>
+            <input type="number" id="points" min="0">
+        </div>
+        <div class="input-section">
+            <label for="destination">Destination:</label>
+            <select id="destination">
+                <option value="Khayelitsha">Khayelitsha</option>
+                <option value="Dunoon">Dunoon</option>
+                <option value="Mitchells Plain">Mitchells Plain</option>
+            </select>
+        </div>
+        <div class="input-section">
+            <label for="travel-time">Travel Time:</label>
+            <select id="travel-time">
+                <option value="peak">Peak</option>
+                <option value="off-peak">Off-Peak</option>
+            </select>
+        </div>
+        <div class="input-section">
+            <label for="return-trip">Return Trip:</label>
+            <input type="checkbox" id="return-trip">
+        </div>
+        <div id="output-section">
+            <div class="result" id="cost-per-trip"></div>
+            <div class="result" id="total-trips"></div>
+            <div class="result" id="return-trips"></div>
+            <div class="result" id="cost-per-return-trip"></div>
+            <div class="result" id="price-per-trip"></div>
+        </div>
+        <button id="calculate-btn">Calculate</button>
+    </div>
+    <script src="./bus.js"></script>
+</body>
+</html>
